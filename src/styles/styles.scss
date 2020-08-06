@@ -17,7 +17,16 @@ h1 {
 button {
     padding: 5px 15px;
     margin-top: 10px;
-    cursor: pointer;
     font-size: 16px;
     font-family: "Comic Sans MS";
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
 }

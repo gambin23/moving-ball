@@ -31,4 +31,9 @@ export class AppComponent implements OnInit, OnDestroy {
     ballClicked() {
         this.ballService.getNewBall();
     }
+
+    automate() {
+        this.isAuto = !this.isAuto;
+        this.isAuto ? this.ballService.setAutomatic() : this.ballService.setManual();
+    }
 }
