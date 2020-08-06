@@ -1,0 +1,28 @@
+$ball-length: 50px;
+$box-height: 200px;
+$box-width: 400px;
+$box-border-radius: 5px;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    position: relative;
+    border-radius: ($ball-length) / 2 + $box-border-radius;
+    width: $box-width;
+    height: $box-height;
+    border: $box-border-radius solid white;
+}
+
+.ball {
+    position: absolute;
+    border-radius: ($ball-length) / 2;
+    width: $ball-length;
+    height: $ball-length;
+    cursor: pointer;
+}

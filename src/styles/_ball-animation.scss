@@ -1,0 +1,66 @@
+$animation-duration: 0.5s;
+
+.pos-top-left {
+    top: 0;
+    left: 0;
+    animation: topLeft $animation-duration;
+}
+
+.pos-top-right {
+    top: 0;
+    right: 0;
+    animation: topRight $animation-duration;
+}
+
+.pos-bottom-right {
+    bottom: 0;
+    right: 0;
+    animation: bottomRight $animation-duration;
+}
+
+.pos-bottom-left {
+    bottom: 0;
+    left: 0;
+    animation: bottomLeft $animation-duration;
+}
+
+
+@keyframes topLeft {
+    from {
+        top: 80%;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes topRight {
+    from {
+        right: 80%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes bottomRight {
+    from {
+        bottom: 80%;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+@keyframes bottomLeft {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 0;
+    }
+}

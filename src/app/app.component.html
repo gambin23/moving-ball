@@ -1,6 +1,12 @@
 <div class="wrapper">
-    <div class="box">
-        <div class="ball">
+    <ng-container *ngIf="ballConfig; else loading">
+        <h1 [style.color]="ballConfig.color">Moving Ball</h1>
+        <div class="box">
+            <div [class]="'ball ' + ballConfig.class" (click)="ballClicked()" [style.background-color]="ballConfig.color">
+            </div>
         </div>
-    </div>
+    </ng-container>
+    <ng-template #loading>
+        loading...
+    </ng-template>
 </div>

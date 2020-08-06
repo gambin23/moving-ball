@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/801092a5-8de5-4a78-8c21-1bf6ba33c4fa/resourceGroups/GAMBINW/providers/Microsoft.Web/sites/movingball",
+    "appService.deploySubpath": "dist"
+}
